@@ -1,0 +1,7 @@
+---
+- name: Configure NTP on all hosts
+  hosts: all
+  become: yes
+
+  roles:
+    - geerlingguy.ntp
