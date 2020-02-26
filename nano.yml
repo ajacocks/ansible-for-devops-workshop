@@ -1,0 +1,9 @@
+---
+- name: Remove nano from all hosts
+  hosts: all
+  become: yes
+
+  tasks:
+    - package:
+        name: nano
+        state: absent
